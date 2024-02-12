@@ -1,29 +1,29 @@
 package com.gus.vetcare.controllers;
 
-import com.gus.vetcare.models.VetModel;
+import com.gus.vetcare.models.DiagnosticModel;
 import com.gus.vetcare.services.ICrud;
 
 import java.util.List;
 
-public class VetController implements ICrud<VetModel> {
+public class DiagnosticController implements ICrud<DiagnosticModel> {
 
     @Override
-    public void create(VetModel data) {
+    public void create(DiagnosticModel data) {
 
     }
 
     @Override
-    public VetModel getById(Long id) {
+    public DiagnosticModel getById(Long id) {
         return null;
     }
 
     @Override
-    public void update(Long id, VetModel data) {
+    public void update(Long id, DiagnosticModel data) {
 
     }
 
     @Override
-    public List<VetModel> getAll() {
+    public List<DiagnosticModel> getAll() {
         return null;
     }
 

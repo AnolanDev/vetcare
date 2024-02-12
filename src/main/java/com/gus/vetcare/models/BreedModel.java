@@ -1,32 +1,22 @@
 package com.gus.vetcare.models;
 
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class BreedModel {
 
     private Long    id;
     private String  name;
     private String  origin;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
+    public BreedModel(String name, String origin) {
         this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
         this.name = name;
-    }
-
-    public String getOrigin() {
-        return origin;
-    }
-
-    public void setOrigin(String origin) {
         this.origin = origin;
     }
+
+
 }

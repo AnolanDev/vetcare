@@ -1,49 +1,30 @@
 package com.gus.vetcare.models;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@Getter
 public class PetModel {
-    private Long    id;
-    private String  name;
-    private String  birthdate;
-    private String  gender;
-    private String  color;
+    private Long id;
+    private String name;
+    private String birthdate;
+    private String gender;
+    private SpecieModel specieModel;
+    private BreedModel breedModel;
+    private String color;
+    private MedicalTreatmentModel medicalTreatmentModel;
+    private CustomerModel ownerModel;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
+    public PetModel(Long id, String name, String birthdate, String gender, SpecieModel specieModel, BreedModel breedModel, String color, CustomerModel ownerModel) {
         this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
         this.name = name;
-    }
-
-    public String getBirthdate() {
-        return birthdate;
-    }
-
-    public void setBirthdate(String birthdate) {
         this.birthdate = birthdate;
-    }
-
-    public String getGender() {
-        return gender;
-    }
-
-    public void setGender(String gender) {
         this.gender = gender;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
+        this.specieModel = specieModel;
+        this.breedModel = breedModel;
         this.color = color;
+        this.ownerModel = ownerModel;
     }
+
 }

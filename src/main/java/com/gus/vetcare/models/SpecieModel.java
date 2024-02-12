@@ -1,23 +1,18 @@
 package com.gus.vetcare.models;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@Getter
 public class SpecieModel {
 
     private Long    id;
     private String  name;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
+    public SpecieModel(Long id, String name) {
         this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
         this.name = name;
     }
+
 }
